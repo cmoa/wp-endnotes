@@ -22,6 +22,8 @@ class CMOA_Footnotes {
     if (null === static::$instance) {
       static::$instance = new static();
       static::$instance->notes = [];
+      $options = array('extension' => '.html');
+      static::$instance->mustache = new Mustache_Engine(['loader' => new Mustache_Loader_FilesystemLoader(__DIR__.'/templates', $options)]);
     }
 
     return static::$instance;
@@ -78,11 +80,7 @@ function footnote_filter($content) {
   $footnotes = $foot->getNotes();
 
   if (is_singular() && count($footnotes) > 0) {
-    $options = array('extension' => '.html');
-    $m = new Mustache_Engine(array(
-      'loader' => new Mustache_Loader_FilesystemLoader(__DIR__.'/templates', $options)
-    ));
-    return $content.$m->render('footnotes.html', array('footnotes' => $footnotes));
+    return $content.$foot->mustache->render('footnotes.html', array('footnotes' => $footnotes));
   }
   else {
     return $content;
@@ -108,7 +106,7 @@ function ref_shortcode($atts, $content = "") {
   $foot = CMOA_Footnotes::getInstance();
   $foot->addNote($content);
   $count = count($foot->getNotes());
-  return '<sup class="cmoa-footnotes__index"><a href="#fn-'.$count.'">'.$count.'</a></sup>&nbsp;';
+  return $foot->mustache->render('footnote-link.html', array('count' => $count));
 }
 add_shortcode('ref', 'ref_shortcode');
 

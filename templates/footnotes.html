@@ -1,5 +1,6 @@
-<div class="cmoa-footnotes">
+<h2 id="footnote-label" class="screen-reader-text">Footnotes</h2>
+<ol class="cmoa-footnotes">
   {{#footnotes}}
-    <p id="fn-{{id}}" class="cmoa-footnotes__note"><sup>{{id}}</sup> {{content}}</p>
+    <li id="fn-{{id}}" class="cmoa-footnotes__note" tabindex="0">{{content}} <a href="#fn-link-{{id}}" class="cmoa-footnotes__return-link" aria-label="Back to content" tabindex="0">↵</a></li>
   {{/footnotes}}
-</div>
+</ol>
