@@ -106,7 +106,7 @@ function ref_shortcode($atts, $content = "") {
   $foot = CMOA_Footnotes::getInstance();
   $foot->addNote($content);
   $count = count($foot->getNotes());
-  return $foot->mustache->render('footnote-link.html', array('count' => $count));
+  return $foot->mustache->render('footnote-link.html', array('count' => $count, 'content' => $content));
 }
 add_shortcode('ref', 'ref_shortcode');
 

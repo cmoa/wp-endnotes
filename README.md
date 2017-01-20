@@ -1,4 +1,4 @@
-# CMOA FOOTNOTES v1.1.0
+# CMOA FOOTNOTES v1.2.0
 
 ## About
 

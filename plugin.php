@@ -4,7 +4,7 @@
  * Description: Adds footnotes to post content
  * Author: Carney+Co.
  * Author URI: http://carney.co
- * Version: 1.0.0
+ * Version: 1.2.0
  */
 
 /**
