@@ -1,21 +1,21 @@
 {
-  "name": "carneyplusco/cmoa-footnotes",
+  "name": "cmoa/wp-endnotes",
   "description": "WordPress plugin to easily add footnotes to post content",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "authors": [
     {
       "name": "Carney+Co.",
       "email": "dev.team@carney.co",
-      "homepage": "http://carney.co"
+      "homepage": "https://carney.co"
     },
     {
       "name": "Carnegie Museum of Art",
       "email": "info@cmoa.org",
-      "homepage": "http://github.com/cmoa"
+      "homepage": "https://github.com/cmoa"
     }
   ],
   "keywords": [
-    "wordpress, footnotes"
+    "wordpress, footnotes, endnotes"
   ],
   "type": "wordpress-plugin",
   "require": {

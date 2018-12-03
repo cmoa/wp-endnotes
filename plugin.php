@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: CMOA Footnotes
- * Description: Adds footnotes to post content
+ * Plugin Name: WP Endnotes
+ * Description: Adds endnotes to post content
  * Author: Carney+Co.
- * Author URI: http://carney.co
- * Version: 1.2.0
+ * Author URI: https://carney.co
+ * Version: 1.2.1
  */
 
 /**

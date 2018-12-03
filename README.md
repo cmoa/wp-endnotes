@@ -1,8 +1,8 @@
-# CMOA FOOTNOTES v1.2.0
+# WP ENDNOTES v1.2.1
 
 ## About
 
-CMOA Footnotes is a simple WordPress plugin that provides a shortcode for creating footnotes in post content.
+WP Endnotes is a simple WordPress plugin that provides a shortcode for creating footnotes in post content.
 
 To use, activate the plugin, then wrap any footnote text within a `[ref]` shortcode tag. Footnote links and numbers are managed automatically.
 
