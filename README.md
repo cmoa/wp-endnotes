@@ -1,4 +1,4 @@
-# WP ENDNOTES v1.2.1
+# WP ENDNOTES v1.2.2
 
 ## About
 
