@@ -4,7 +4,7 @@
  * Description: Adds endnotes to post content
  * Author: Carney+Co.
  * Author URI: https://carney.co
- * Version: 1.2.1
+ * Version: 1.2.2
  */
 
 /**
