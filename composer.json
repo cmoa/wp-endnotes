@@ -1,7 +1,7 @@
 {
   "name": "cmoa/wp-endnotes",
   "description": "WordPress plugin to easily add footnotes to post content",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "authors": [
     {
       "name": "Carney+Co.",
